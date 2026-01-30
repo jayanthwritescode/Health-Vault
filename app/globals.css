@@ -1,0 +1,312 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Sophisticated Medical Palette - Light Mode */
+    --background: 40 20% 98%; /* Warm off-white #faf9f7 */
+    --foreground: 215 30% 18%; /* Deep navy text */
+    
+    /* Primary - Clinical Teal (muted, professional) */
+    --primary: 180 35% 35%; /* #2c7a7b - muted teal */
+    --primary-foreground: 40 20% 98%;
+    
+    /* Secondary - Deep Medical Blue */
+    --secondary: 215 45% 25%; /* Deep navy #1a2f4a */
+    --secondary-foreground: 40 20% 98%;
+    
+    /* Accent - Warm Terracotta */
+    --accent: 25 75% 50%; /* #d97706 - burnt orange */
+    --accent-foreground: 40 20% 98%;
+    
+    /* Neutrals - Intentional, not generic */
+    --card: 0 0% 100%;
+    --card-foreground: 215 30% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 30% 18%;
+    --muted: 40 15% 95%; /* Warm gray, not blue-gray */
+    --muted-foreground: 215 15% 45%;
+    --border: 40 12% 88%;
+    --input: 40 12% 88%;
+    --ring: 180 35% 35%;
+    
+    /* Sage green for variety */
+    --sage: 150 20% 45%;
+    
+    /* Status */
+    --success: 150 40% 42%;
+    --warning: 35 85% 55%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --radius: 0.5rem; /* Tighter radius, more clinical */
+  }
+
+  .dark {
+    /* Professional Dark - Deep Navy, NOT slate */
+    --background: 215 50% 8%; /* #0a1628 - deep navy */
+    --foreground: 40 15% 92%; /* Warm off-white */
+    
+    /* Primary - Brighter teal for dark */
+    --primary: 180 45% 55%; /* Visible but not neon */
+    --primary-foreground: 215 50% 8%;
+    
+    /* Secondary - Lighter navy */
+    --secondary: 215 35% 35%;
+    --secondary-foreground: 40 15% 92%;
+    
+    /* Accent - Warm orange */
+    --accent: 25 80% 58%;
+    --accent-foreground: 215 50% 8%;
+    
+    /* Neutrals - Warm dark tones */
+    --card: 215 45% 12%; /* Tinted dark blue */
+    --card-foreground: 40 15% 92%;
+    --popover: 215 45% 12%;
+    --popover-foreground: 40 15% 92%;
+    --muted: 215 40% 16%;
+    --muted-foreground: 40 10% 65%;
+    --border: 215 35% 20%;
+    --input: 215 35% 20%;
+    --ring: 180 45% 55%;
+    
+    /* Sage for variety */
+    --sage: 150 25% 50%;
+    
+    /* Status */
+    --success: 150 45% 48%;
+    --warning: 35 90% 60%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Font family utilities */
+  .font-display {
+    font-family: var(--font-display), system-ui, sans-serif;
+  }
+  
+  .font-sans {
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Professional Shadows - Subtle, not overdone */
+  .shadow-clinical {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  }
+  
+  .shadow-elevated {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04);
+  }
+  
+  .shadow-prominent {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.04);
+  }
+  
+  .dark .shadow-clinical {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dark .shadow-elevated {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .dark .shadow-prominent {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Intentional Spacing - Not uniform */
+  .space-section {
+    @apply py-20 md:py-28 lg:py-36;
+  }
+  
+  .space-section-sm {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+  
+  .space-asymmetric-y {
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+  }
+  
+  /* Typography - Tight leading for clinical precision */
+  .leading-clinical {
+    line-height: 1.2;
+  }
+  
+  .leading-comfortable {
+    line-height: 1.6;
+  }
+  
+  /* Subtle transitions - not overdone */
+  .transition-smooth {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Scrollbar */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Bento box grid - asymmetric */
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .bento-span-2 {
+    grid-column: span 2;
+  }
+  
+  .bento-span-3 {
+    grid-column: span 3;
+  }
+  
+  .bento-span-4 {
+    grid-column: span 4;
+  }
+  
+  .bento-row-2 {
+    grid-row: span 2;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-500;
+}
+
+/* Voice recording animation */
+@keyframes wave {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+}
+
+.wave-bar {
+  animation: wave 1s ease-in-out infinite;
+}
+
+.wave-bar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.wave-bar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.wave-bar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.wave-bar:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+/* Loading skeleton */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.skeleton {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(
+    to right,
+    #f0f0f0 0%,
+    #e0e0e0 20%,
+    #f0f0f0 40%,
+    #f0f0f0 100%
+  );
+  background-size: 1000px 100%;
+}
+
+.dark .skeleton {
+  background: linear-gradient(
+    to right,
+    #2a2a2a 0%,
+    #3a3a3a 20%,
+    #2a2a2a 40%,
+    #2a2a2a 100%
+  );
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    @apply bg-white text-black;
+  }
+}
