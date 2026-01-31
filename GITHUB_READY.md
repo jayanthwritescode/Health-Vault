@@ -99,10 +99,10 @@ Complete rewrite with:
    git add .
    
    # Commit
-   git commit -m "Initial commit: MedScribe AI - Healthcare Communication Platform"
+   git commit -m "Initial commit: Health Vault - Healthcare Communication Platform"
    
    # Add remote (replace with your repo URL)
-   git remote add origin https://github.com/yourusername/medscribe-ai.git
+   git remote add origin https://github.com/yourusername/health-vault.git
    
    # Push
    git push -u origin main

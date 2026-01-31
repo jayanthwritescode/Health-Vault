@@ -51,7 +51,7 @@ export default function DoctorDashboardPage() {
                   <Stethoscope className="w-5 h-5 text-primary-foreground" strokeWidth={2.5} />
                 </div>
                 <div>
-                  <span className="text-lg font-bold tracking-tight">MedScribe AI</span>
+                  <span className="text-lg font-bold tracking-tight">Health Vault</span>
                   <div className="text-xs text-muted-foreground hidden sm:block">Clinical Dashboard</div>
                 </div>
               </button>

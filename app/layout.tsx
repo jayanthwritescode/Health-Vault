@@ -17,10 +17,10 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'MedScribe AI - Modern Medical AI Assistant',
+  title: 'Health Vault - Modern Medical AI Assistant',
   description: 'Comprehensive medical AI assistant for doctors and patients featuring post-consultation documentation, pre-consultation history collection, and patient-facing digital health assistance.',
   keywords: 'medical AI, healthcare, SOAP notes, medical documentation, patient assistant, telemedicine',
-  authors: [{ name: 'MedScribe AI Team' }],
+  authors: [{ name: 'Health Vault Team' }],
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   themeColor: [
     { media: '(prefers-color-scheme: light)', color: '#0EA5E9' },

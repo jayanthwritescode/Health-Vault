@@ -1,4 +1,4 @@
-# MedScribe AI 🏥
+# Health Vault 🏥
 
 > **AI-Powered Healthcare Communication Platform for India**  
 > Breaking language barriers in healthcare with voice-first AI assistance
@@ -18,7 +18,7 @@ India faces a critical healthcare communication gap:
 
 ## 💡 Our Solution
 
-MedScribe AI is a comprehensive healthcare communication platform that:
+Health Vault is a comprehensive healthcare communication platform that:
 
 ### For Doctors 👨‍⚕️
 - **Smart Documentation**: Auto-generate SOAP notes, prescriptions, and medical records from consultations
@@ -64,8 +64,8 @@ MedScribe AI is a comprehensive healthcare communication platform that:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/medscribe-ai.git
-cd medscribe-ai
+git clone https://github.com/yourusername/health-vault.git
+cd health-vault
 ```
 
 2. **Install dependencies**
@@ -104,7 +104,7 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 ## 📁 Project Structure
 
 ```
-medscribe-ai/
+health-vault/
 ├── app/
 │   ├── page.tsx                    # Landing page
 │   ├── doctor/
@@ -180,7 +180,7 @@ medscribe-ai/
 
 ### Vercel (Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/medscribe-ai)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/health-vault)
 
 ```bash
 npm run build

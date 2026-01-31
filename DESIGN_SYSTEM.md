@@ -1,4 +1,4 @@
-# 🎨 MedScribe AI Design System
+# 🎨 Health Vault Design System
 
 ## Overview
 Modern, minimal, bold aesthetic inspired by One Medical with a medical blue/green color scheme.

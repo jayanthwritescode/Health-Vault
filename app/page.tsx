@@ -36,7 +36,7 @@ export default function HomePage() {
                 <Stethoscope className="w-5 h-5 text-primary-foreground" strokeWidth={2.5} />
               </div>
               <div>
-                <span className="text-lg font-bold tracking-tight">MedScribe AI</span>
+                <span className="text-lg font-bold tracking-tight">Health Vault</span>
                 <div className="text-xs text-muted-foreground hidden sm:block">Healthcare Conversations</div>
               </div>
             </div>
@@ -507,7 +507,7 @@ export default function HomePage() {
                 <div className="w-7 h-7 rounded-md bg-primary flex items-center justify-center">
                   <Stethoscope className="w-4 h-4 text-primary-foreground" strokeWidth={2.5} />
                 </div>
-                <span className="text-base font-semibold tracking-tight">MedScribe</span>
+                <span className="text-base font-semibold tracking-tight">Health Vault</span>
               </div>
               <p className="text-sm text-muted-foreground leading-comfortable max-w-xs">
                 AI-powered healthcare conversations in 8 Indian languages. Available 24/7 for patients and doctors.
@@ -544,7 +544,7 @@ export default function HomePage() {
           </div>
 
           <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-xs text-muted-foreground">© 2025 MedScribe. All rights reserved.</p>
+            <p className="text-xs text-muted-foreground">© 2025 Health Vault. All rights reserved.</p>
             <div className="flex items-center gap-4 text-xs text-muted-foreground">
               <span>Made for India's healthcare</span>
             </div>

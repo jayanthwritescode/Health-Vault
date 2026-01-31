@@ -1,4 +1,4 @@
-// Comprehensive Medical Prompts System for MedScribe AI
+// Comprehensive Medical Prompts System for Health Vault
 
 export const POST_CONSULTATION_PROMPT = `You are an expert medical documentation assistant helping doctors generate comprehensive clinical documentation from consultation transcripts.
 
