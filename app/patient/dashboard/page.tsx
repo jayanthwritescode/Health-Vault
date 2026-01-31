@@ -33,6 +33,7 @@ import { ThemeToggle } from '@/components/theme-toggle'
 import { useReportsStore, MedicalReport, HealthSummary } from '@/lib/reports-store'
 import { useAppointmentStore } from '@/lib/appointments-store'
 import { initializeDemoReports } from '@/lib/demo-reports'
+import { EmergencyButton } from '@/components/patient/EmergencyButton'
 
 export default function PatientDashboardPage() {
   const router = useRouter()
@@ -490,6 +491,16 @@ export default function PatientDashboardPage() {
 
             {/* Sidebar */}
             <div className="space-y-6">
+              {/* Emergency Button */}
+              <EmergencyButton 
+                patientInfo={{
+                  id: 'patient_1',
+                  name: 'Sarah Johnson',
+                  phone: '+1-555-0123',
+                  email: 'sarah.johnson@email.com'
+                }}
+              />
+
               {/* Upcoming Appointments */}
               <Card>
                 <CardHeader>

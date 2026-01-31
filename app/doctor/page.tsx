@@ -16,6 +16,7 @@ import { Button } from '@/components/ui/button'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { useAppointmentStore } from '@/lib/appointments-store'
 import { usePatientStore } from '@/lib/patients-store'
+import { EmergencyAlertsPanel } from '@/components/doctor/EmergencyAlertsPanel'
 
 export default function DoctorDashboardPage() {
   const router = useRouter()
@@ -112,6 +113,11 @@ export default function DoctorDashboardPage() {
                 Upcoming this week
               </div>
             </div>
+          </div>
+
+          {/* Emergency Alerts - Priority */}
+          <div className="mb-12">
+            <EmergencyAlertsPanel doctorId="doc_1" />
           </div>
 
           {/* Today's Schedule - Prominent if exists */}
