@@ -64,11 +64,18 @@ export default function HomePage() {
             {/* CTA & Theme Toggle */}
             <div className="flex items-center gap-3">
               <Button
-                onClick={() => router.push('/patient/select-language')}
+                onClick={() => router.push('/auth/login')}
                 className="bg-accent hover:bg-accent/90 text-white h-9 px-4 text-sm font-medium shadow-elevated hidden sm:flex"
               >
+                Sign In
+              </Button>
+              <Button
+                onClick={() => router.push('/patient/select-language')}
+                variant="outline"
+                className="h-9 px-4 text-sm font-medium hidden sm:flex"
+              >
                 <Mic className="w-4 h-4 mr-2" strokeWidth={2} />
-                Start Now
+                Try Demo
               </Button>
               <ThemeToggle />
             </div>
@@ -108,20 +115,20 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Button 
                   size="lg" 
-                  onClick={() => router.push('/patient/select-language')}
+                  onClick={() => router.push('/auth/signup')}
                   className="bg-accent hover:bg-accent/90 text-white h-12 px-6 text-base font-medium shadow-elevated"
                 >
-                  <Mic className="w-4 h-4 mr-2" strokeWidth={2} />
-                  Start Voice Chat
+                  Get Started
+                  <ArrowRight className="w-4 h-4 ml-2" strokeWidth={2} />
                 </Button>
                 <Button 
                   size="lg" 
                   variant="outline"
-                  onClick={() => router.push('/patient/assistant')}
+                  onClick={() => router.push('/patient/select-language')}
                   className="h-12 px-6 text-base font-medium border-2"
                 >
-                  <MessageSquare className="w-4 h-4 mr-2" strokeWidth={2} />
-                  Text Chat
+                  <Mic className="w-4 h-4 mr-2" strokeWidth={2} />
+                  Try Demo
                 </Button>
               </div>
               
@@ -449,20 +456,20 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg"
-                  onClick={() => router.push('/patient/select-language')}
+                  onClick={() => router.push('/auth/signup')}
                   className="bg-accent hover:bg-accent/90 text-white h-12 px-6 text-base font-medium shadow-elevated"
                 >
-                  <Mic className="w-4 h-4 mr-2" strokeWidth={2} />
-                  Start Voice Chat
+                  Get Started
+                  <ArrowRight className="w-4 h-4 ml-2" strokeWidth={2} />
                 </Button>
                 <Button 
                   size="lg"
                   variant="outline"
-                  onClick={() => router.push('/patient/assistant')}
+                  onClick={() => router.push('/patient/select-language')}
                   className="h-12 px-6 text-base font-medium border-2"
                 >
-                  <MessageSquare className="w-4 h-4 mr-2" strokeWidth={2} />
-                  Start Text Chat
+                  <Mic className="w-4 h-4 mr-2" strokeWidth={2} />
+                  Try Demo
                 </Button>
               </div>
             </div>
